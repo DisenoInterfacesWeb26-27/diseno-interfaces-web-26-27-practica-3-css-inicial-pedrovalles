@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ClínicaDIW</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html">ClínicaDIW</a>
+            <form action="#" method="get" role="search">
+                <input type="search" id="buscar" name="buscar" placeholder="¿Qué estás buscando?">
+            </form>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <div>
+                <h1>Contacto</h1>
+                <p>Cuéntanos qué necesitas y te responderemos lo antes posible.</p>
+            </div>
+
+            <section>
+                <h2>Datos de contacto</h2>
+                <address>Calle Jaime Miguel, 1 · Alicante<br>Teléfono: <a href="tel:+34965350040">965 350 040</a>
+                </address>
+            </section>
+
+            <form action="#" method="post">
+
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[A-Za-z0-9]{1,40}"
+                        maxlength="40" required autofocus>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                </p>
+
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="99" placeholder="Entre 18 y 99 años"
+                        required>
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="965000000" required>
+                </p>
+
+                <p>
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="5" placeholder="Escribe aquí tu consulta"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        He leído y acepto la
+                        <a href="./privacidad.html">política de privacidad y cookies</a>.
+                    </label>
+                </p>
+
+                <button id="enviar" name="enviar" type="submit">
+                    Enviar consulta
+                </button>
+
+            </form>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ClínicaDIW</p>
+        <p><a href="#">Política de privacidad y cookies</a></p>
+    </footer>
+</body>
+
+</html>
