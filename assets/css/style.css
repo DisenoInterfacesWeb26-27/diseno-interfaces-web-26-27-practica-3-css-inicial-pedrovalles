@@ -1,6 +1,63 @@
+/* ==========================================
+   1. TIPOGRAFÍAS LOCALES 
+   ========================================== */
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('../fonts/GoogleSansFlexLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('../fonts/GoogleSansFlexRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('../fonts/GoogleSansFlexBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ==========================================
+   2. RESETEO UNIVERSAL
+   ========================================== */
 * {
   margin: 0px;
   padding: 0px;
+}
+
+/* ==========================================
+
+  \3. FUENTES Y TAMAÑOS
+
+  ========================================== */
+
+body,
+p,
+a,
+address,
+form,
+table,
+section {
+  font-family: 'Google Sans Flex', sans-serif;
+
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: 'Google Sans Flex', sans-serif;
+
+  font-weight: 700;
 }
 
 html {
