@@ -2,3 +2,53 @@
   margin: 0px;
   padding: 0px;
 }
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1em; /* 16px */
+}
+
+h1 {
+  font-size: 2.5em; /* 40px */
+}
+
+h2 {
+  font-size: 2em; /* 32px */
+}
+
+h3,
+aside h2 {
+  font-size: 1.5em; /* 24px */
+}
+
+p {
+  font-size: 1em; /* 16px */
+}
+
+address,
+footer p,
+th,
+td {
+  font-size: 0.875em; /* 14px */
+}
+
+caption {
+  font-size: 0.75em; /* 12px */
+}
+
+main > section > div > a,
+article a {
+  font-size: 1.25em; /* 20px, botones */
+}
+
+input,
+textarea {
+  font-size: 1em;
+}
+
+button {
+  font-size: 1.25em; /* 20px */
+}
