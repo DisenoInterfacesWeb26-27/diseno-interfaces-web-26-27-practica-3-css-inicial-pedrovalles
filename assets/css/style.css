@@ -1,29 +1,29 @@
 /* ==========================================
-   1. TIPOGRAFÍAS LOCALES 
+  TIPOGRAFÍAS LOCALES 
    ========================================== */
 @font-face {
   font-family: 'Google Sans Flex';
-  src: url('../fonts/GoogleSansFlexLight.woff2') format('woff2');
+  src: url('../webfonts/GoogleSansFlexLight.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Google Sans Flex';
-  src: url('../fonts/GoogleSansFlexRegular.woff2') format('woff2');
+  src: url('../webfonts/GoogleSansFlexRegular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Google Sans Flex';
-  src: url('../fonts/GoogleSansFlexBold.woff2') format('woff2');
+  src: url('../webfonts/GoogleSansFlexBold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 /* ==========================================
-   2. RESETEO UNIVERSAL
+   Actividad 3.1
    ========================================== */
 * {
   margin: 0px;
@@ -32,20 +32,15 @@
 
 /* ==========================================
 
-  \3. FUENTES Y TAMAÑOS
+  Actividad 4.1
 
   ========================================== */
 
-body,
-p,
-a,
-address,
-form,
-table,
-section {
-  font-family: 'Google Sans Flex', sans-serif;
-
+body {
+  font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif;
   font-weight: 400;
+  font-size: 1em;
+  color: #1e3a44; /* color base: lo heredan títulos, párrafos, address, caption y span */
 }
 
 h1,
@@ -53,19 +48,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-nav {
-  font-family: 'Google Sans Flex', sans-serif;
-
+h6 {
   font-weight: 700;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  font-size: 1em; /* 16px */
 }
 
 h1 {
@@ -98,7 +82,7 @@ caption {
 
 main > section > div > a,
 article a {
-  font-size: 1.25em; /* 20px, botones */
+  font-size: 1.25em; /* 20px */
 }
 
 input,
@@ -108,4 +92,96 @@ textarea {
 
 button {
   font-size: 1.25em; /* 20px */
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* ==========================================
+
+  Actividad 5.1
+
+  ========================================== */
+
+body,
+header,
+main,
+section,
+aside,
+nav,
+article {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #1e3a44;
+  color: #ffffff;
+}
+
+a {
+  color: #1e3a44;
+  text-decoration: none;
+}
+
+footer p,
+footer a,
+footer span {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #a1d6e2;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  background-color: #ffffff;
+  color: #1e3a44;
+  border: 1px solid #bcbabe;
+}
+
+button {
+  background-color: #1e3a44;
+  color: #ffffff;
+  border: none;
+}
+
+button:hover {
+  background-color: #1995ad;
+}
+
+/* 4. Etiquetas de tablas de contenido */
+table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  border-left: none;
+  border-right: none;
+}
+
+th {
+  background-color: transparent;
+  border-top: 2px solid #1e3a44;
+  border-bottom: 2px solid #1e3a44;
+}
+
+td {
+  border-bottom: 1px solid #bcbabe; /* Línea separadora sutil entre las filas de datos */
 }
