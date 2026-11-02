@@ -1,3 +1,4 @@
+/* ----- FUENTES LOCALES -----*/
 @font-face {
   font-family: 'Google Sans Flex';
   src: url('../webfonts/GoogleSansFlexLight.woff2') format('woff2');
@@ -18,6 +19,8 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/*----- ESTILOS GENERALES ---*/
 
 * {
   margin: 0px;
@@ -46,21 +49,21 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5em; /* 40px */
+  font-size: 2.5em;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 2em; /* 32px */
+  font-size: 2em;
 }
 
 h3,
 aside h2 {
-  font-size: 1.5em; /* 24px */
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 1em; /* 16px */
+  font-size: 1em;
   text-indent: 0;
   word-spacing: normal;
 }
@@ -69,7 +72,7 @@ address,
 footer p,
 th,
 td {
-  font-size: 0.875em; /* 14px */
+  font-size: 0.875em;
 }
 
 address {
@@ -77,12 +80,12 @@ address {
 }
 
 caption {
-  font-size: 0.75em; /* 12px */
+  font-size: 0.75em;
 }
 
 main > section > div > a,
 article a {
-  font-size: 1.25em; /* 20px */
+  font-size: 1.25em;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -93,7 +96,7 @@ textarea {
 }
 
 button {
-  font-size: 1.25em; /* 20px */
+  font-size: 1.25em;
 }
 
 input,
@@ -152,7 +155,6 @@ button:hover {
   background-color: #1995ad;
 }
 
-/* 4. Etiquetas de tablas de contenido */
 table {
   background-color: #ffffff;
   border-collapse: collapse;
@@ -183,16 +185,13 @@ th {
 }
 
 td {
-  border-bottom: 1px solid #bcbabe; /* Línea separadora sutil entre las filas de datos */
+  border-bottom: 1px solid #bcbabe;
 }
+
+/*----- ESTILOS HEADER ---*/
 
 header {
   padding: 30px;
-}
-
-.logo {
-  width: 50px;
-  vertical-align: middle;
 }
 
 .header__marca {
@@ -204,7 +203,7 @@ header {
 }
 
 .header__logo {
-  font-size: 1.875em; /* 30px */
+  font-size: 1.875em;
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
@@ -214,14 +213,13 @@ header {
   width: 48px;
   height: auto;
   vertical-align: middle;
-  margin-right: 4px; /* separación entre el icono y el texto */
+  margin-right: 4px;
 }
 
 .header__logo--txt {
   display: inline-block;
   vertical-align: middle;
   margin-top: 3px;
-  list-style: none;
 }
 
 .diw {
@@ -237,17 +235,19 @@ header {
   margin-right: 0;
 }
 
-img {
-  width: 100px;
+/*----- ESTILOS BOTONES ------*/
+
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .btn__principal {
-  display: inline-block;
-  padding: 10px 20px;
   background-color: #1e3a44;
   color: #ffffff;
-  border-radius: 10px;
-  font-weight: 700;
 }
 
 .btn__principal:hover {
@@ -255,28 +255,20 @@ img {
 }
 
 .btn__secundario {
-  display: inline-block;
-  padding: 10px 20px;
   background-color: transparent;
-  color: #1e3a44;
-  border-radius: 10px;
-  border: 2px solid #1e3a44;
-  font-weight: 700;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .btn__secundario:hover {
   background-color: #1e3a44;
+  border: 2px solid #1e3a44;
   color: #ffffff;
 }
 
 .btn__verMas {
-  display: inline-block;
-  padding: 10px 24px;
   color: #1e3a44;
   border: 2px solid #1e3a44;
-  border-radius: 10px;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .btn__verMas:hover {
@@ -284,54 +276,37 @@ img {
   border-color: #a1d6e2;
 }
 
+/*----- ESTILOS SECCIÓN HERO ------*/
+
 main {
   padding-top: 30px;
 }
 
 .section__hero {
   width: 100%;
-  display: inline-block;
 }
-
-.section__hero--container {
-  background-color: #1995ad;
-  padding: 30px 40px;
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* Texto */
 
 .section__hero--content {
-  width: 400px;
-  float: left;
-  padding-top: 65px;
-  padding-left: 80px;
+  background-color: #1995ad;
+  padding: 80px 0;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
 }
 
 .section__hero--content h1 {
-  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.section__hero h1 span {
+  display: block;
 }
 
 .section__hero--content p {
-  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-/* Fotografía */
-
-.section__hero--photo {
-  float: right;
-  text-align: center;
-}
-
-.section__hero--img {
-  display: block;
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 30px;
-}
+/*----- SECCIÓN SERVICIOS ------*/
 
 .section__servicios {
   overflow: hidden;
@@ -347,6 +322,8 @@ main {
   float: left;
   width: 70%;
 }
+
+/*------ ESTILOS ASIDE ------*/
 
 .section__servicios aside {
   float: right;
@@ -378,7 +355,8 @@ main {
   background-color: #a1d6e2;
 }
 
-/* Estilo de la tarjeta (Card) a tamaño completo */
+/*------ ESTILOS ARTÍCULOS -----*/
+
 .section__servicios article {
   display: block;
   width: 100%;
@@ -397,20 +375,21 @@ main {
   border-bottom: 1px solid #bcbabe; /* Línea para separar la foto del texto[cite: 13, 25] */
 }
 
-/* Contenedor del texto y botón dentro de la tarjeta */
 .section__servicios article > div:last-child {
-  padding: 30px; /* Relleno amplio para que respire bien el texto */
+  padding: 30px;
 }
 
 .section__servicios article h3 {
   margin-bottom: 12px;
-  font-size: 1.5em; /* 24px - Un poco más grande al tener más espacio visual */
+  font-size: 1.5em;
 }
 
 .section__servicios article p {
   margin-bottom: 24px;
-  color: #1e3a44; /*[cite: 12] */
+  color: #1e3a44;
 }
+
+/*------ ESTILOS FOOTER ------*/
 
 .footer__info {
   padding: 20px;
@@ -430,12 +409,27 @@ main {
   margin-bottom: 20px;
 }
 
-.footer__conteiner--logo {
+.footer__marca {
   display: inline;
+}
+
+.footer__container--logo {
+  display: inline-block;
   vertical-align: middle;
+  margin-right: 0.08em;
 }
 
 .footer__logo {
   width: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer__logo--txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__legal {
   vertical-align: middle;
 }
