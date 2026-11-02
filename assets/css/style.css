@@ -79,10 +79,6 @@ address {
   font-style: normal;
 }
 
-caption {
-  font-size: 0.75em;
-}
-
 main > section > div > a,
 article a {
   font-size: 1.25em;
@@ -155,6 +151,8 @@ button:hover {
   background-color: #1995ad;
 }
 
+/*------ ESTILOS TABLAS GENERALES ------*/
+
 table {
   background-color: #ffffff;
   border-collapse: collapse;
@@ -162,14 +160,15 @@ table {
 }
 
 caption {
-  text-align: left;
+  font-size: 1em;
+  text-align: center;
   padding-bottom: 16px;
   font-weight: 700;
 }
 
 th,
 td {
-  text-align: left;
+  text-align: center;
   padding: 16px;
   border-left: none;
   border-right: none;
@@ -186,6 +185,10 @@ th {
 
 td {
   border-bottom: 1px solid #bcbabe;
+}
+
+tr:last-child td {
+  border-bottom: 0px;
 }
 
 /*----- ESTILOS HEADER ---*/
@@ -432,4 +435,17 @@ main {
 
 .footer__legal {
   vertical-align: middle;
+}
+
+/*------ ESTILOS PÁGINA SERVICIOS ------*/
+
+.section__servicios--encabezado {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.section__servivios--tabla {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
