@@ -260,16 +260,20 @@ button:hover {
   color: #ffffff;
 }
 
-.footer__legal--enlace:hover {
-  color: #a1d6e2;
-}
-
 .footer__legal--enlace:link,
 .footer__legal--enlace:visited {
   color: #bcbabe;
 }
 
-/*------ ESTILOS ICÓNO WHATSAPP -----*/
+.footer__legal--enlace:hover {
+  color: #a1d6e2;
+}
+
+.footer__legal--enlace:active {
+  color: #1995ad;
+}
+
+/*------ ESTILOS ICONO WHATSAPP -----*/
 
 .iconWhatsapp {
   position: fixed;
@@ -402,7 +406,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* Ssección servicios */
+/* Sección servicios */
 
 .section__servicios {
   overflow: hidden;
@@ -471,6 +475,10 @@ main {
 .section__servicios article p {
   margin-bottom: 24px;
   color: #1e3a44;
+}
+
+.section__privacidad {
+  text-align: justify;
 }
 
 /*------ ESTILOS FOOTER ------*/
@@ -614,7 +622,7 @@ tbody tr:nth-child(even) {
 
 .section__formulario--contenedor input:focus,
 .section__formulario--contenedor textarea:focus {
-  outline: none;
+  outline: 2px solid #a1d6e2;
   border-color: #1995ad;
 }
 
