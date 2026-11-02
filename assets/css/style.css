@@ -37,6 +37,7 @@ body {
   color: #1e3a44; /* color base: lo heredan títulos, párrafos, address, caption y span */
   line-height: 1.5;
   letter-spacing: 0.01em;
+  padding-top: 80px;
 }
 
 h1,
@@ -194,6 +195,11 @@ tr:last-child td {
 /*----- ESTILOS HEADER ---*/
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* por encima del resto del contenido */
   padding: 30px;
 }
 
@@ -448,4 +454,28 @@ main {
   width: 600px;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+/*------ ESTILOS ICÓNO WHATSAPP -----*/
+
+.iconWhatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1e3a44;
+  text-align: center;
+  line-height: 60px;
+}
+
+.iconWhatsapp img {
+  width: 32px;
+  vertical-align: middle;
+}
+
+.iconWhatsapp:hover {
+  background-color: #1995ad;
 }
