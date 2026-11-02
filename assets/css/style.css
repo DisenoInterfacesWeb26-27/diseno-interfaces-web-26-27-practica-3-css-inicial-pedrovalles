@@ -22,6 +22,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -183,4 +184,258 @@ th {
 
 td {
   border-bottom: 1px solid #bcbabe; /* Línea separadora sutil entre las filas de datos */
+}
+
+header {
+  padding: 30px;
+}
+
+.logo {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.header__marca {
+  float: left;
+}
+
+.nav__menu {
+  float: right;
+}
+
+.header__logo {
+  font-size: 1.875em; /* 30px */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 4px; /* separación entre el icono y el texto */
+}
+
+.header__logo--txt {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 3px;
+  list-style: none;
+}
+
+.diw {
+  font-weight: 700;
+}
+
+.nav__menu ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.nav__menu ul li:last-child {
+  margin-right: 0;
+}
+
+img {
+  width: 100px;
+}
+
+.btn__principal {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e3a44;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn__principal:hover {
+  background-color: #1995ad;
+}
+
+.btn__secundario {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #1e3a44;
+  border-radius: 10px;
+  border: 2px solid #1e3a44;
+  font-weight: 700;
+}
+
+.btn__secundario:hover {
+  background-color: #1e3a44;
+  color: #ffffff;
+}
+
+.btn__verMas {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #1e3a44;
+  border: 2px solid #1e3a44;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn__verMas:hover {
+  background-color: #a1d6e2;
+  border-color: #a1d6e2;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.section__hero {
+  width: 100%;
+  display: inline-block;
+}
+
+.section__hero--container {
+  background-color: #1995ad;
+  padding: 30px 40px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Texto */
+
+.section__hero--content {
+  width: 400px;
+  float: left;
+  padding-top: 65px;
+  padding-left: 80px;
+}
+
+.section__hero--content h1 {
+  font-size: 55px;
+}
+
+.section__hero--content p {
+  font-size: 25px;
+}
+
+/* Fotografía */
+
+.section__hero--photo {
+  float: right;
+  text-align: center;
+}
+
+.section__hero--img {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.section__servicios {
+  overflow: hidden;
+  padding: 60px 50px;
+}
+
+.section__servicios h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section__servicios > div {
+  float: left;
+  width: 70%;
+}
+
+.section__servicios aside {
+  float: right;
+  width: 25%;
+  border: 2px solid #1e3a44;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+.section__servicios aside ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.section__servicios aside li {
+  margin-bottom: 10px;
+}
+
+.section__servicios aside a {
+  display: block;
+  padding: 10px;
+  background-color: #f1f1f2;
+  color: #1e3a44;
+  border-radius: 5px;
+}
+
+.section__servicios aside a:hover {
+  background-color: #a1d6e2;
+}
+
+/* Estilo de la tarjeta (Card) a tamaño completo */
+.section__servicios article {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  border: 1px solid #bcbabe;
+  border-radius: 12px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.section__servicios article img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #bcbabe; /* Línea para separar la foto del texto[cite: 13, 25] */
+}
+
+/* Contenedor del texto y botón dentro de la tarjeta */
+.section__servicios article > div:last-child {
+  padding: 30px; /* Relleno amplio para que respire bien el texto */
+}
+
+.section__servicios article h3 {
+  margin-bottom: 12px;
+  font-size: 1.5em; /* 24px - Un poco más grande al tener más espacio visual */
+}
+
+.section__servicios article p {
+  margin-bottom: 24px;
+  color: #1e3a44; /*[cite: 12] */
+}
+
+.footer__info {
+  padding: 20px;
+}
+
+.footer__info ul li {
+  display: inline;
+}
+
+.footer__info ul a {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.footer__social {
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__conteiner--logo {
+  display: inline;
+  vertical-align: middle;
+}
+
+.footer__logo {
+  width: 30px;
+  vertical-align: middle;
 }
