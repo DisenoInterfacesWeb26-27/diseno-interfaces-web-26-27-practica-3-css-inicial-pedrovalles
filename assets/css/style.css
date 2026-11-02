@@ -118,38 +118,11 @@ footer {
   text-align: center;
 }
 
-a {
-  color: #1e3a44;
-  text-decoration: none;
-}
-
-footer p,
-footer a,
-footer span {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #a1d6e2;
-  background-color: transparent;
-}
-
 input,
 textarea {
   background-color: #ffffff;
   color: #1e3a44;
   border: 1px solid #bcbabe;
-}
-
-button {
-  background-color: #1e3a44;
-  color: #ffffff;
-  border: none;
-}
-
-button:hover {
-  background-color: #1995ad;
 }
 
 /*------ ESTILOS TABLAS GENERALES ------*/
@@ -190,6 +163,222 @@ td {
 
 tr:last-child td {
   border-bottom: 0px;
+}
+
+/* Filas de la tabla */
+thead tr:first-child {
+  background-color: #1e3a44;
+}
+
+thead tr:first-child th {
+  color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f2;
+}
+
+/*----- ESTILOS BOTONES Y ENLACES ------*/
+
+a {
+  color: #1e3a44;
+  text-decoration: none;
+}
+
+main p a:link {
+  color: #1e3a44;
+  text-decoration: underline;
+}
+
+main p a:visited {
+  color: #1995ad;
+}
+
+main p a:hover {
+  background-color: #a1d6e2;
+}
+
+main p a:active {
+  background-color: #1995ad;
+  color: #ffffff;
+}
+
+footer p,
+footer a,
+footer span {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #a1d6e2;
+}
+
+footer a:active {
+  color: #bcbabe;
+}
+
+footer a:hover {
+  color: #a1d6e2;
+  background-color: transparent;
+}
+
+button {
+  background-color: #1e3a44;
+  color: #ffffff;
+  border: none;
+}
+
+button:hover {
+  background-color: #1995ad;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.btn__principal {
+  background-color: #1e3a44;
+  color: #ffffff;
+}
+
+.btn__principal:link,
+.btn__principal:visited {
+  background-color: #1e3a44;
+  color: #ffffff;
+}
+
+.btn__principal:hover {
+  background-color: #1995ad;
+}
+
+.btn__principal:active,
+.btn__principal:link {
+  color: #1e3a44;
+}
+
+.btn__secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn__secundario:link,
+.btn__secundario:visited {
+  color: #ffffff;
+}
+
+.btn__secundario:hover {
+  background-color: #1e3a44;
+  border: 2px solid #1e3a44;
+  color: #ffffff;
+}
+
+.btn__secundario:active {
+  background-color: #1995ad;
+  border-color: #1e3a44;
+  color: #1e3a44;
+}
+
+.btn__verMas {
+  color: #1e3a44;
+  border: 2px solid #1e3a44;
+}
+
+.btn__verMas:link,
+.btn__verMas:visited {
+  color: #1e3a44;
+}
+
+.btn__verMas:hover {
+  background-color: #a1d6e2;
+  border-color: #a1d6e2;
+}
+
+.aside__enlace {
+  display: block;
+  padding: 10px;
+  background-color: #f1f1f2;
+  color: #1e3a44;
+  border-radius: 5px;
+}
+
+.aside__enlace:link {
+  color: #1e3a44;
+}
+
+.aside__enlace:visited {
+  color: #1995ad;
+}
+
+.aside__enlace:hover {
+  background-color: #a1d6e2;
+}
+
+.aside__enlace:active {
+  background-color: #1995ad;
+  color: #ffffff;
+}
+
+.footer__iconSocial {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.footer__iconSocial:link,
+.footer__iconSocial:visited {
+  background-color: transparent;
+}
+
+.footer__iconSocial:hover {
+  background-color: #1995ad;
+  border-radius: 50%;
+}
+
+.footer__iconSocial:active {
+  background-color: #bcbabe;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+}
+
+/*------ ESTILOS ICÓNO WHATSAPP -----*/
+
+.iconWhatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1e3a44;
+  text-align: center;
+  line-height: 60px;
+}
+
+.iconWhatsapp img {
+  width: 32px;
+  vertical-align: middle;
+}
+
+.iconWhatsapp:hover {
+  background-color: #1995ad;
+}
+
+.iconWhatsapp:active {
+  background-color: #bcbabe;
 }
 
 /*----- ESTILOS HEADER ---*/
@@ -242,47 +431,6 @@ header {
 
 .nav__menu ul li:last-child {
   margin-right: 0;
-}
-
-/*----- ESTILOS BOTONES ------*/
-
-.btn {
-  display: inline-block;
-  border-radius: 10px;
-  font-weight: 700;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.btn__principal {
-  background-color: #1e3a44;
-  color: #ffffff;
-}
-
-.btn__principal:hover {
-  background-color: #1995ad;
-}
-
-.btn__secundario {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-}
-
-.btn__secundario:hover {
-  background-color: #1e3a44;
-  border: 2px solid #1e3a44;
-  color: #ffffff;
-}
-
-.btn__verMas {
-  color: #1e3a44;
-  border: 2px solid #1e3a44;
-}
-
-.btn__verMas:hover {
-  background-color: #a1d6e2;
-  border-color: #a1d6e2;
 }
 
 /*----- ESTILOS SECCIÓN HERO ------*/
@@ -352,18 +500,6 @@ main {
   margin-bottom: 10px;
 }
 
-.section__servicios aside a {
-  display: block;
-  padding: 10px;
-  background-color: #f1f1f2;
-  color: #1e3a44;
-  border-radius: 5px;
-}
-
-.section__servicios aside a:hover {
-  background-color: #a1d6e2;
-}
-
 /*------ ESTILOS ARTÍCULOS -----*/
 
 .section__servicios article {
@@ -406,16 +542,11 @@ main {
 
 .footer__info ul li {
   display: inline;
-}
-
-.footer__info ul a {
-  display: inline-block;
-  padding: 0px 15px;
+  margin-bottom: 10px;
 }
 
 .footer__social {
   width: 20px;
-  margin-bottom: 20px;
 }
 
 .footer__marca {
@@ -454,28 +585,4 @@ main {
   width: 600px;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-/*------ ESTILOS ICÓNO WHATSAPP -----*/
-
-.iconWhatsapp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #1e3a44;
-  text-align: center;
-  line-height: 60px;
-}
-
-.iconWhatsapp img {
-  width: 32px;
-  vertical-align: middle;
-}
-
-.iconWhatsapp:hover {
-  background-color: #1995ad;
 }
