@@ -80,13 +80,6 @@ address {
   font-style: normal;
 }
 
-main > section > div > a,
-article a {
-  font-size: 1.25em;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
 input,
 textarea {
   font-size: 1em;
@@ -94,12 +87,6 @@ textarea {
 
 button {
   font-size: 1.25em;
-}
-
-input,
-textarea,
-button {
-  font-family: inherit;
 }
 
 body,
@@ -118,70 +105,6 @@ footer {
   text-align: center;
 }
 
-input,
-textarea {
-  background-color: #ffffff;
-  color: #1e3a44;
-  border: 1px solid #bcbabe;
-}
-
-/*------ ESTILOS TABLAS GENERALES ------*/
-
-table {
-  background-color: #ffffff;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-caption {
-  font-size: 1em;
-  text-align: center;
-  padding-bottom: 16px;
-  font-weight: 700;
-}
-
-th,
-td {
-  text-align: center;
-  padding: 16px;
-  border-left: none;
-  border-right: none;
-  vertical-align: middle;
-}
-
-th {
-  background-color: transparent;
-  border-top: 2px solid #1e3a44;
-  border-bottom: 2px solid #1e3a44;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-td {
-  border-bottom: 1px solid #bcbabe;
-}
-
-tr:last-child td {
-  border-bottom: 0px;
-}
-
-/* Filas de la tabla */
-thead tr:first-child {
-  background-color: #1e3a44;
-}
-
-thead tr:first-child th {
-  color: #ffffff;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f1f1f2;
-}
-
 /*----- ESTILOS BOTONES Y ENLACES ------*/
 
 a {
@@ -191,7 +114,7 @@ a {
 
 main p a:link {
   color: #1e3a44;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main p a:visited {
@@ -199,7 +122,7 @@ main p a:visited {
 }
 
 main p a:hover {
-  background-color: #a1d6e2;
+  color: #a1d6e2;
 }
 
 main p a:active {
@@ -212,19 +135,6 @@ footer a,
 footer span {
   color: #ffffff;
   text-decoration: none;
-}
-
-footer a:hover {
-  color: #a1d6e2;
-}
-
-footer a:active {
-  color: #bcbabe;
-}
-
-footer a:hover {
-  color: #a1d6e2;
-  background-color: transparent;
 }
 
 button {
@@ -241,7 +151,6 @@ button:hover {
   display: inline-block;
   border-radius: 10px;
   font-weight: 700;
-  border-radius: 10px;
   padding: 10px 20px;
 }
 
@@ -260,8 +169,7 @@ button:hover {
   background-color: #1995ad;
 }
 
-.btn__principal:active,
-.btn__principal:link {
+.btn__principal:active {
   color: #1e3a44;
 }
 
@@ -348,9 +256,17 @@ button:hover {
   background-color: #bcbabe;
 }
 
-footer a:link,
-footer a:visited {
+.footer__legal--enlace {
   color: #ffffff;
+}
+
+.footer__legal--enlace:hover {
+  color: #a1d6e2;
+}
+
+.footer__legal--enlace:link,
+.footer__legal--enlace:visited {
+  color: #bcbabe;
 }
 
 /*------ ESTILOS ICÓNO WHATSAPP -----*/
@@ -433,11 +349,26 @@ header {
   margin-right: 0;
 }
 
-/*----- ESTILOS SECCIÓN HERO ------*/
+/*----- ESTILOS SECCIONES ------*/
 
 main {
   padding-top: 30px;
 }
+
+.section__encabezado {
+  text-align: center;
+  padding: 60px 0px 50px 0px;
+}
+
+.section__contenido {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Sección Hero */
 
 .section__hero {
   width: 100%;
@@ -445,9 +376,17 @@ main {
 
 .section__hero--content {
   background-color: #1995ad;
+  background-image:
+    linear-gradient(rgba(25, 149, 173, 0.85), rgba(30, 58, 68, 0.85)),
+    url('../images/imgHero.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 0;
   color: #ffffff;
   text-align: center;
+  vertical-align: middle;
   line-height: 1;
 }
 
@@ -463,7 +402,7 @@ main {
   margin-bottom: 20px;
 }
 
-/*----- SECCIÓN SERVICIOS ------*/
+/* Ssección servicios */
 
 .section__servicios {
   overflow: hidden;
@@ -480,7 +419,7 @@ main {
   width: 70%;
 }
 
-/*------ ESTILOS ASIDE ------*/
+/* estilos aside */
 
 .section__servicios aside {
   float: right;
@@ -500,7 +439,7 @@ main {
   margin-bottom: 10px;
 }
 
-/*------ ESTILOS ARTÍCULOS -----*/
+/* Estilos articulos */
 
 .section__servicios article {
   display: block;
@@ -574,15 +513,136 @@ main {
   vertical-align: middle;
 }
 
-/*------ ESTILOS PÁGINA SERVICIOS ------*/
+/*------ ESTILOS TABLAS ------*/
 
-.section__servicios--encabezado {
-  text-align: center;
-  padding: 80px 0;
+table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.section__servivios--tabla {
-  width: 600px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+caption {
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+  border-left: none;
+  border-right: none;
+  vertical-align: middle;
+}
+
+th {
+  background-color: transparent;
+  border-top: 2px solid #1e3a44;
+  border-bottom: 2px solid #1e3a44;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+td {
+  border-bottom: 1px solid #bcbabe;
+}
+
+tr:last-child td {
+  border-bottom: 0px;
+}
+
+thead tr:first-child {
+  background-color: #1e3a44;
+}
+
+thead tr:first-child th {
+  color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f2;
+}
+
+/*------ ESTILOS FORMULARIO ------*/
+
+.section__formulario--contenedor {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  padding: 30px;
+  background-color: #f1f1f2;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.section__formulario--contenedor p {
+  margin-bottom: 20px;
+}
+
+.section__formulario--contenedor label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1e3a44;
+  font-weight: bold;
+}
+
+.section__formulario--contenedor input[type='text'],
+.section__formulario--contenedor input[type='email'],
+.section__formulario--contenedor input[type='number'],
+.section__formulario--contenedor input[type='tel'],
+.section__formulario--contenedor textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bcbabe;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1em;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.section__formulario--contenedor input:hover,
+.section__formulario--contenedor textarea:hover {
+  border-color: #1995ad;
+}
+
+.section__formulario--contenedor input:focus,
+.section__formulario--contenedor textarea:focus {
+  outline: none;
+  border-color: #1995ad;
+}
+
+.section__formulario--contenedor textarea {
+  resize: vertical;
+}
+
+.section__formulario--contenedor input[type='checkbox'] {
+  accent-color: #1995ad;
+}
+
+.section__formulario--contenedor input[type='checkbox'] + label {
+  display: inline;
+  font-weight: normal;
+}
+
+.section__formulario--contenedor label a {
+  color: #1995ad;
+  text-decoration: none;
+}
+
+.section__formulario--contenedor label a:hover {
+  text-decoration: underline;
+}
+
+.section__formulario--contenedor button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
 }
